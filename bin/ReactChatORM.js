@@ -3,7 +3,7 @@ let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
 //connection to the database
-mongoose.connect('mongodb://db/reactChat')
+mongoose.connect('mongodb://db/Chat')
 
 let messageSchema = new Schema({
     email: String,

@@ -1,7 +1,7 @@
 {
-  "name": "reactChat",
+  "name": "Chat",
   "version": "1.0.4",
-  "description": "Little webchat with socket.io & reactjs using webpack",
+  "description": "webchat with socket.io & reactjs",
   "main": "server.js",
   "scripts": {
     "dev": "node_modules/.bin/webpack-dev-server --content-base src --inline --hot",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/purema4/reactChat.git"
+    "url": "git+https://github.com/Dzhan85/dockerchat.git"
   },
-  "author": "Marc-Antoine Carrière <purema4@gmail.com>",
+  "author": "TEST",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/purema4/reactChat/issues"
+    "url": "https://github.com/Dzhan85/dockerchat/issues"
   },
-  "homepage": "https://github.com/purema4/reactChat#readme",
+  "homepage": "https://github.com/Dzhan85/dockerchat#readme",
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-core": "^6.23.1",
