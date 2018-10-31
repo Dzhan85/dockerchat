@@ -1,0 +1,48 @@
+{
+  "name": "reactChat",
+  "version": "1.0.4",
+  "description": "Little webchat with socket.io & reactjs using webpack",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node_modules/.bin/webpack-dev-server --content-base src --inline --hot",
+    "docker-dev":"docker-compose --file docker-compose-dev.yml up",
+    "webpack": "node_modules/.bin/webpack --config webpack.config.js",
+    "build": "cross-env NODE_ENV=production npm run webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildNode": "node_modules/.bin/babel bin --out-dir lib --presets=es2015,stage-0 --plugin=add-module-exports,transform-class-properties,transform-decorators-legacy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/purema4/reactChat.git"
+  },
+  "author": "Marc-Antoine Carrière <purema4@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/purema4/reactChat/issues"
+  },
+  "homepage": "https://github.com/purema4/reactChat#readme",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-react-html-attrs": "^2.0.0",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  },
+  "dependencies": {
+    "cross-env": "^5.1.3",
+    "express": "^4.14.1",
+    "loadash": "0.0.1",
+    "mongoose": "^4.8.3",
+    "simple-peer": "^6.3.0",
+    "socket.io": "^1.7.3"
+  }
+}

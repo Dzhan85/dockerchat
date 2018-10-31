@@ -1,0 +1,15 @@
+version: '3.2'
+
+services:
+  app:
+    build: purema4/reactchat
+    ports:
+      - 80:3000
+    environment:
+      - NODE_ENV=production
+    depends_on:
+     - db
+
+  db:
+    image: mongo:latest
+    
